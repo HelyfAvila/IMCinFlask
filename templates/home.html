@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/bootstrap.css" />
+
+    <title>Document</title>
+</head>
+<body>
+    <h1>Olá, seja bem vindo!</h1>
+    <h1>Calcular indice de massa corporal utilizando metodo o POST</h1>
+    <form action="/calcular_imc" method="POST">
+        <label> Sua Altura</label>
+        <input type="text" name="txt_altura"><br>
+        <label>Seu Peso</label>
+        <input type="text" name="txt_peso"><br>
+        <input type="submit" value="calcular">
+        <input type="reset" value = "Limpar">
+    </form>
+    <div class="res_imc">
+        <h1>{{ res_imc }} {{ res_classificacao }}</h1>
+    
+        {% if res_classificacao == 'MAGREZA' %}
+            <br>
+            <img src="./static/imagens/magreza.PNG">
+        {% elif res_classificacao == 'SOBREPESO' %}
+            <br>
+            <img src="./static/imagens/sobrepeso.PNG">
+        {% endif %}
+    </div>
+    <h1>Calcular índice de massa corporal utilizando o metodo GET</h1>
+    <form action="/calcular_imc_get">
+        <label class="form-label">Sua Altura</label>
+        <input class="form-control" type="text" name="txt_altura"><br>
+        <label class="form-label">Seu Peso</label>
+        <input class="form-control" type="text" name="txt_peso"><br>
+        <input class="btn btn-primary" type="submit" value="calcular">
+        <input class="btn btn-primary" type="reset" name="Limpar">
+    </form>
+   
+   
+   
+</body>
+</html>

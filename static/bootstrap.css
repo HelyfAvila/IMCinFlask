@@ -1,0 +1,76 @@
+/* Estilos para o corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1f1f1f;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para o cabeçalho h1 */
+h1 {
+  color: #00bfff;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Estilos para o formulário */
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para as etiquetas de input */
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+/* Estilos para os campos de entrada */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #444;
+  color: #fff;
+}
+
+/* Estilos para os botões */
+input[type="submit"],
+input[type="reset"] {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #00bfff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #0080ff;
+}
+
+/* Estilos para a resposta do IMC */
+.res_imc {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.res_classificacao{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
